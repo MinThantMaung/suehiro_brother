@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PaginatedGallery, { ImageItem } from "./PaginatedGallery";
+import { Suspense } from "react";
 
 const images: ImageItem[] = [
   {
@@ -48,6 +49,20 @@ const images: ImageItem[] = [
   },
 ];
 
+function GallerySkeleton() {
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+      {Array.from({ length: 9 }).map((_, i) => (
+        <div
+          key={i}
+          className="h-60 animate-pulse rounded-xl bg-gray-200"
+          aria-hidden
+        />
+      ))}
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -63,8 +78,9 @@ export default function Home() {
       </header>
 
       <main className="container mx-auto px-6 pb-16">
-        {/* Choose how many cards per page */}
-        <PaginatedGallery images={images} pageSize={9} />
+        <Suspense fallback={<GallerySkeleton />}>
+          <PaginatedGallery images={images} pageSize={9} />
+        </Suspense>
       </main>
     </div>
   );
