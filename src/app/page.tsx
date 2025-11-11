@@ -36,6 +36,42 @@ const images = [
     title: "MKK",
     caption: "The man who try to look cute",
   },
+  {
+    src: "/kmk2.jpg",
+    title: "KMK & ZLPT",
+    caption: "Y2k bois",
+  },
+  {
+    src: "/kmk3.jpg",
+    title: "KMK",
+    caption:
+      "He thought he look like luffy,actually he look like Aung khant Paing",
+  },
+  {
+    src: "/kmk4.jpg",
+    title: "KMK",
+    caption: "In chiba mind,don't touch me you filthy human",
+  },
+  {
+    src: "/kmk5.jpg",
+    title: "KMK",
+    caption: "Modern Samusa boy",
+  },
+  {
+    src: "/kmk6.jpg",
+    title: "KMK & APM",
+    caption: "The brotherhood",
+  },
+  {
+    src: "/mtm.jpg",
+    title: "MTM",
+    caption: "The day he almost lost his life",
+  },
+  {
+    src: "/hah.jpg",
+    title: "HAH & KMK",
+    caption: "Water Vendor & Donator",
+  },
 ];
 
 export default function Home() {
