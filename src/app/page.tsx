@@ -37,6 +37,15 @@ const images: ImageItem[] = [
   { src: "/kmk6.jpg", title: "KMK & APM", caption: "The brotherhood" },
   { src: "/mtm.jpg", title: "MTM", caption: "The day he almost lost his life" },
   { src: "/hah.jpg", title: "HAH & KMK", caption: "Water Vendor & Donator" },
+  { src: "/zlpt1.jpg", title: "ZLPT", caption: "Which cow gonna be lucky?" },
+  { src: "/sla1.jpg", title: "SLA", caption: "Defination of true color" },
+  { src: "/group.jpg", title: "Group", caption: "The memory" },
+  { src: "/KMK7.jpg", title: "KMK", caption: "The Burmese soldier" },
+  {
+    src: "/KMK8.jpg",
+    title: "KMK",
+    caption: "He accepts all kinds of customers!",
+  },
 ];
 
 export default function Home() {
