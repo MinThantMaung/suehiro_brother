@@ -35,14 +35,14 @@ export default function Pagination({
       aria-label="Pagination"
     >
       <button
-        className="rounded-lg px-3 py-1.5 text-black text-sm ring-1 ring-gray-300 disabled:opacity-50"
+        className="rounded-lg px-3 py-1.5 text-black text-sm ring-1 ring-gray-300 disabled:opacity-50 cursor-pointer"
         onClick={() => go(1)}
         disabled={page === 1}
       >
         First
       </button>
       <button
-        className="rounded-lg px-3 py-1.5 text-sm text-black ring-1 ring-gray-300 disabled:opacity-50"
+        className="rounded-lg px-3 py-1.5 text-sm text-black ring-1 ring-gray-300 disabled:opacity-50 cursor-pointer"
         onClick={() => go(page - 1)}
         disabled={page === 1}
       >
@@ -59,7 +59,7 @@ export default function Pagination({
             key={n}
             onClick={() => go(n)}
             aria-current={n === page ? "page" : undefined}
-            className={`rounded-lg px-3 py-1.5 text-sm ring-1 ring-gray-300
+            className={`rounded-lg px-3 py-1.5 text-sm ring-1 ring-gray-300 cursor-pointer
               ${
                 n === page
                   ? "bg-gray-900 text-white ring-gray-900"
@@ -72,14 +72,14 @@ export default function Pagination({
       )}
 
       <button
-        className="rounded-lg px-3 py-1.5 text-sm text-black ring-1 ring-gray-300 disabled:opacity-50"
+        className="rounded-lg px-3 py-1.5 text-sm text-black ring-1 ring-gray-300 disabled:opacity-50 cursor-pointer"
         onClick={() => go(page + 1)}
         disabled={page === totalPages}
       >
         Next
       </button>
       <button
-        className="rounded-lg px-3 py-1.5 text-sm text-black ring-1 ring-gray-300 disabled:opacity-50"
+        className="rounded-lg px-3 py-1.5 text-sm text-black ring-1 ring-gray-300 disabled:opacity-50 cursor-pointer"
         onClick={() => go(totalPages)}
         disabled={page === totalPages}
       >
